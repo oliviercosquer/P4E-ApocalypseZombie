@@ -1,0 +1,7 @@
+author: Gabigabigo
+description: Play-4-Elements - Bukkit France - OnlyZombies
+name: P4E-BukkitFrance-OnlyZombies
+version: 0.1.2
+main: fr.Gabigabigo.OZ.OZ
+load: STARTUP
+url: http://play-4-elements.fr
