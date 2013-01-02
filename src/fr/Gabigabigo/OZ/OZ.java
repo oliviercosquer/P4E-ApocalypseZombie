@@ -14,10 +14,10 @@ public class OZ extends JavaPlugin {
     public static OZ plugin;
 
     @Override
-    public void onLoad(){
+    public void onLoad() {
         this.killCreature();
     }
-    
+
     @Override
     public void onDisable() {
     }
@@ -30,8 +30,8 @@ public class OZ extends JavaPlugin {
 
         this.killCreature();
     }
-    
-    private void killCreature(){
+
+    private void killCreature() {
         //Replace al the entities by zombie
         for (World w : getServer().getWorlds()) {
             for (Entity ent : w.getEntities()) {
@@ -42,6 +42,6 @@ public class OZ extends JavaPlugin {
                     ent.remove();
                 }
             }
-        } 
+        }
     }
 }

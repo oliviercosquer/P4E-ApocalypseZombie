@@ -41,14 +41,14 @@ public class OZServerListener implements Listener {
         //Make zombie go faster
         event.getEntity().addPotionEffect(new PotionEffect(PotionEffectType.SPEED, 2147483647, 2));
     }
-    
+
     @EventHandler(priority = EventPriority.NORMAL)
     public void onEntityDamage(EntityDamageEvent event) {
         EntityType entType = event.getEntityType();
         Entity ent = event.getEntity();
 
         //Cancel if zombie damaged by a fire tick
-        if(entType == EntityType.ZOMBIE && event.getCause() == DamageCause.FIRE_TICK){
+        if (entType == EntityType.ZOMBIE && event.getCause() == DamageCause.FIRE_TICK) {
             event.setCancelled(true);
             ent.setFireTicks(0);
         }
